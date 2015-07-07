@@ -27,7 +27,7 @@ with(consumption, plot(consumption$datetime, as.numeric(consumption$Sub_metering
 lines(consumption$datetime, as.numeric(consumption$Sub_metering_1), col="black")
 lines(consumption$datetime, as.numeric(consumption$Sub_metering_2), col="red")
 lines(consumption$datetime, as.numeric(consumption$Sub_metering_3), col="blue")
-legend("topright", lty=c(1,1), col = c("black", "red", "blue"), legend= c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lty=c(1,1), col = c("black", "red", "blue"), legend= c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n")
 
 # plot 2, 2
 with(consumption, plot(consumption$datetime, as.numeric(consumption$Global_reactive_power ), type="n", ylab="Global_reactive_power", xlab="datetime"))

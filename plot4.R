@@ -13,7 +13,7 @@ png("plot4.png", width=480, height=480)
 # Draw plot in png file
 par(mfrow = c(2,2), mar=c(6, 4, 3, 2)) 
 # plot 1, 1
-with(consumption, plot(consumption$datetime, as.numeric(consumption$Global_active_power ), type="n", ylab="Global Active Power (kilowatts)", xlab=""))
+with(consumption, plot(consumption$datetime, as.numeric(consumption$Global_active_power ), type="n", ylab="Global Active Power", xlab=""))
 lines(consumption$datetime, as.numeric(consumption$Global_active_power))
 
 # plot 1, 2
